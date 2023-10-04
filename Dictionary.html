@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dictionary</title>
+</head>
+<body>
+<p>Dictionary</p>
+<input type="text" id="input">
+<button onclick="search()">Search</button>
+<p id="result"></p>
+<script>
+    function search() {
+        let x = document.getElementById('input').value;
+        let a = x.toString();
+        let eng = ['apple', 'orange', 'banana', 'red', 'blue'];
+
+        let vie = ['táo', 'cam', 'chuối', 'đỏ', 'xanh'];
+
+        for (let i = 0; i < eng.length; i++) {
+            if (a == eng[i]) {
+                document.getElementById('result').innerHTML = vie[i];
+                break;
+            } else {
+                document.getElementById('result').innerHTML = 'không có';
+                
+            }
+        }
+    }
+</script>
+</body>
+</html>
