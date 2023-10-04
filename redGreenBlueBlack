@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mau</title>
+</head>
+<body>
+<script>
+    let x = +prompt('Nhap so phan tu mang a: ')
+    let a=[];
+    for (let i = 0; i<x; i++) {
+        a[i] = prompt('Nhap mang a');
+    }
+    let y = +prompt('Nhap so phan tu mang b: ')
+    let b=[];
+    for (let i = 0; i<y; i++) {
+        b[i] = prompt('Nhap mang b');
+    }
+    let c = a.concat(b);
+    document.write(c.join(','));
+</script>
+</body>
+</html>
